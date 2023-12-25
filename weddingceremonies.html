@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wedding ceremonies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0; 
+      padding: 0;
+      font-family: 'Kalnia', serif; 
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("./images/weddingbg.jpeg");
+      background-size: auto;
+      z-index: -100; /* Ensure it's behind other content */
+      opacity: 0.5;
+    }
+
+    .marr {
+      color: black; 
+      position: relative; 
+      z-index: 1; 
+      text-align: center;
+    }
+
+    .videos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      cursor: pointer;
+      padding: 50px;
+      padding-top: 0;
+    }
+    video{
+      margin: 50px;
+      height: 200px;
+      width: 400px;
+    }
+
+    @media (max-width:430px)
+    {
+      video{
+      margin: 50px;
+      height: 160px;
+      width: 250px;
+    }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+    <div class="marr">
+      <h1>Ranbir Alia Wedding</h1>
+    </div>
+  <div class="videos">
+    <br><br>
+    <video controls  preload="auto" poster="thumbnails\tn1.jpeg" src="videos\video1.mp4"></video>
+    <h4>Engagement</h4>
+    <br><br>
+    <video controls loop preload="auto" poster="thumbnails\tn2.jpeg"   src="videos\video2.mp4"></video>
+    <h4>Prewedding</h4>
+    <br><br>
+    <video controls loop preload="auto" poster="thumbnails\tn3.jpeg"  src="videos\video3.mp4"></video>
+    <h4>Groom ceremony</h4>
+    <br><br>
+    <video controls loop preload="auto" poster="thumbnails\tn4.jpeg"  src="videos\video4.mp4"></video>
+    <h4>Bride ceremony</h4>
+    <br><br>
+    <video controls loop preload="auto" poster="thumbnails\tn5.jpeg"  src="videos\video 5.mp4"></video>
+    <h4>Mehndi ceremony</h4>
+    <br><br>
+    <video controls loop preload="auto" poster="thumbnails\tn6.jpeg"   src="videos\video6.mp4"></video>
+    <h4>Wedding</h4>
+    <br><br>
+    <video controls loop preload="auto" poster="thumbnails\tn7.jpeg" src="videos\video7.mp4"></video>
+    <h4>Reception</h4>
+    <br>
+  </div>
+  
+</body>
+</html>

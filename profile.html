@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pro4</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .first {
+      background-image: url(./images/developer.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      /* width: 100vw;
+      height: 100vh; */
+    }
+
+    .first h2 {
+      color: white;
+    }
+
+    .first h1 {
+      color: white;
+    }
+
+    .first .content {
+      /* margin-left: 325px; */
+      /* padding-top: 75px; */
+      letter-spacing: -2px;
+      max-width: 900px;
+      margin: 0 auto;
+      /* padding-top: 64px;
+      padding-left: 16px; */
+    }
+
+   .first span,
+    .first h1 {
+      font-weight: lighter;
+      font-size: 70px;
+    }
+
+    .second {
+      color: white;
+      background-color: black;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .second h2 {
+      font-size: 72px;
+      font-weight: 300;
+      letter-spacing: -1px;
+      text-align: center;
+    }
+
+    .second span {
+      font-size: 100px;
+    }
+
+    .third {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin: 50px auto;
+      max-width: 1100px;
+    }
+
+    .third .flx {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .third .flx .card {
+      border-radius: 10px;
+      max-width: 320px;
+      height: 400px;
+      box-sizing: border-box;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      transition: scale 1s;
+      cursor: pointer;
+    }
+
+    .third .flx .card:hover {
+      scale: 1.05;
+    }
+
+    .third .flx h4 {
+      padding-top: 25px;
+      padding-left: 15px;
+    }
+
+    .third .flx p {
+      padding-top: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      line-height: 25px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    .fourth {
+      display: flex;
+    }
+
+    @media (max-width: 786px) {
+      .first{
+        min-height: 50vh;
+      }
+      .first span, .content h1{
+        font-size: 32px;
+      }
+      .content{
+        padding: 10px 0;
+        text-align: center;
+      }
+      .second h2 {
+        font-size: 24px; }
+        .second span{
+        font-weight: 400;
+    font-size: 32px;}
+      .fourth {
+        flex-direction: column;
+      }
+
+      .fourth .contact,
+      .fourth .aboutme {
+        min-height: 300px;
+        padding: 32px;
+      }
+
+      .fourth .contact p,
+      .fourth .aboutme p {
+        margin-bottom: 15px;
+        line-height: 22px;
+        font-weight: 100;
+      }
+    }
+
+    .fourth .contact,
+    .fourth .aboutme {
+      background-color: #515603;
+      ;
+      color: white;
+      padding: 32px;
+    }
+
+    .fourth .contact h2,
+    .fourth .aboutme h2 {
+
+      font-size: 60px;
+      font-weight: 100;
+      margin-bottom: 15px
+    }
+
+    .fourth .contact p,
+    .fourth .aboutme p {
+      margin-bottom: 15px;
+      line-height: 22px;
+      font-weight: 100;
+    }
+
+    .fourth .aboutme {
+      background-color: #722300;
+      ;
+      color: white;
+    }
+
+    .footer {
+      background-color: black;
+      height: 50px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="first">
+      <div class="content">
+        <h2><span>Hi,</span> I am John Doe</h2>
+        <br>
+        <h1>FULL STACK DEVELOPER</h1>
+      </div>
+    </div>
+    <div class="second">
+      <h2>WORK, I CAN DO FOR <span>YOU</span></h2>
+    </div>
+    <div class="third">
+      <div class="flx">
+        <div class="card">
+          <img src="./images/web.png" alt="">
+          <h4>Web Development</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deserunt, maiores asperiores quo itaque
+              quaerat voluptate!</p>
+        </div>
+      </div>
+      <div class="flx">
+        <div class="card">
+          <img src="./images/mobile.png" alt="">
+          <h4>App Development</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deserunt, maiores asperiores quo itaque
+              quaerat voluptate!</p>
+        </div>
+      </div>
+      <div class="flx">
+        <div class="card">
+          <img src="./images/web.png" alt="">
+          <h4>UI UX Design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deserunt, maiores asperiores quo itaque
+              quaerat voluptate!</p>
+        </div>
+      </div>
+    </div>
+    <div class="fourth">
+      <div class="contact">
+        <h2>Contact Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deserunt, maiores asperiores quo itaque
+          quaerat voluptate!</p>
+        <p>dosomecoding@example.test</p>
+      </div>
+      <div class="aboutme">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deserunt, maiores asperiores quo itaque
+          quaerat voluptate!</p>
+        <p>dosomecoding@example.test</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>PROJECT BY DO SOME CODING</p>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
