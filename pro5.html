@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pro5</title>
+  <style>
+    *, html, body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .container{ 
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    .nav{
+      box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background: white;
+    padding: 10px;
+    z-index: 50;
+    }
+    .navigation{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .bar{
+    font-size: 15px;
+    padding-right: 30px;
+    }
+    @media (max-width:780px){
+      .bar{
+        padding-right: 20px;  
+      }
+      .hero ,.six{
+    flex-direction: column;
+    }
+    .hero img{
+      width: 80%;
+    }
+    }
+
+     
+    .hero{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* padding: 40px 150px; */
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .content .gr{
+      background-color: green ;
+      padding: 8px;
+      align-self: flex-start;
+      color: white;
+    } 
+    .content button{
+      align-self: flex-start;
+      padding: 10px;
+      border: none;
+      background-color: rgb(255, 188, 88);
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .content h1{
+      font-size: 80px;
+    }
+    .content p{
+      line-height: 20px;
+    }
+    .three{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 80px;
+      margin-top: 50px;
+      padding: 25px;
+    }
+    .three .flx{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .three .flx:hover{
+      box-shadow: 2px 2px rgba(0,0,0,0.1);
+      scale: 1.2;
+    }
+    .three .cont{
+         display: flex;
+         flex-direction: column;
+         margin-left: 10px;
+    }
+    hr{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .four {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      align-items: center;
+      justify-content: center;
+    }
+    .four button{
+      font-size: 18px;
+      padding: 8px;
+      background-color: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .five{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .five .grid {
+      /* border-radius: 15px; */
+      display: grid;
+      gap: 10px;
+     grid-template-areas:
+        "i1 i1 i2 i3"
+        "i1 i1 i2 i7"
+        "i4 i5 i6 i7";
+    }
+    .five .grid img{
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .five .grid img:hover{
+       scale: 1.05;
+  }
+    .it1{
+        grid-area: i1;
+    }
+    .it2{
+        grid-area: i2;
+    }
+    .it3{
+        grid-area: i3;
+    }
+    .it4{
+        grid-area: i4;
+    }
+    .it5{
+        grid-area: i5;
+    }
+    .it6{
+        grid-area: i6;
+    }
+    .it7{
+        grid-area: i7;
+    }
+    footer{
+      background-color: rgb(253, 221, 226);
+    }
+    .six{
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      margin-left: 3%;
+      margin-right: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+  
+    .six .r{
+      line-height: 1.8;
+    }
+    i{
+      position: absolute;
+      z-index: 200;
+    }
+    .icons{
+      display: flex;
+      gap: 35px;
+      font-size:15px;
+    }
+
+  </style>
+</head>
+<body>
+  
+    <div class="nav ">
+      <div class="navigation container">
+        <div><img src="./pro5/logo.png" alt="" ></div>
+        <div class="bar"><i class="fa-solid fa-bars fa-2xl" style="color: #050505;"></i></div>
+      </div>
+    </div>
+    <div class="container">
+    <div class="hero">
+      <img src="./pro5/hero_image.png" alt="">
+      <div class="content">
+        <div class="gr">50% Off on All Products</div>
+        <h1>Enjoy Your Delicious Food</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, iste corporis tempore necessitatibus inventore ex?</p>
+        <button>Explore Now</button>
+      </div>
+    </div>
+    <div class="three">
+      <div class="flx">
+          <img src="./pro5/discount.png" alt="">
+          <div class="cont">
+            <h4>Discount Voucher</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+      </div>
+      <div class="flx">
+        <img src="./pro5/fresh.png" alt="">
+          <div class="cont">
+            <h4>Fresh Healthy Food</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+      </div>
+      <div class="flx">
+        <img src="./pro5/delivery.png" alt="">
+          <div class="cont">
+            <h4>Fast Home Delivery</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+      </div>
+    </div>
+    <hr>
+    <div class="four">
+     <button>Our Menu</button>
+     <h2>Explore Our Menu</h2>
+    </div>
+    <div class="five">
+      <div class="grid">
+        <div class="it1"><img  src="./pro5/grid_image1.png" alt=""></div> 
+        <div class="it2"><img  src="./pro5/grid_image2.png" alt=""></div>
+        <div class="it3"><img  src="./pro5/grid_image3.png" alt=""></div>
+        <div class="it4"><img src="./pro5/grid_image4.png" alt=""></div>
+        <div class="it5"><img  src="./pro5/grid_image5.png" alt=""></div>
+        <div class="it6"><img  src="./pro5/grid_image6.png" alt=""></div>
+        <div class="it7"><img src="./pro5/grid_image7.png" alt=""></div>
+      </div>
+    </div> </div>
+    <footer>
+    <div class="six">
+      <div class="r">
+        <img src="./pro5/logo.png" alt="">
+      </div>
+      <div class="r">
+        <h2>Main Links</h2>
+        <p>Order Tracking</p>
+        <p>New Order</p>
+        <p>Contact Us</p>
+        <p>News & Blogs</p>
+      </div>
+      <div class="r">
+        <h2>Support</h2>
+        <p>About Us
+          </p>
+        <p>Privacy Policy
+          </p>
+        <p>Terms & Conditons</p>
+      </div>
+      <div class="r">
+        <h2>Support</h2>
+        <input type="email" placeholder="Enter Your Email...." style="    padding: 5px 40px;
+        margin-bottom: 10px;">
+        <h3>Follow Us</h3>
+        <br>
+        <div class="icons">
+          <div class="icon"><i class="fa-brands fa-facebook-f fa-2xl" style="color: #000000;"></i></div>
+          <div class="icon"><i class="fa-brands fa-twitter fa-2xl" style="color: #000000;"></i></div>
+            <div class="icon"><i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i></div>
+              <div class="icon"><i class="fa-brands fa-youtube fa-2xl" style="color: #000000;"></i></div>
+        </div>
+    </div>
+  </div></footer>
+
+    <script src="https://kit.fontawesome.com/72c854d8a3.js" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
