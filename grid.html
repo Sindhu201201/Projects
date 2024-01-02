@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 4%;
+      grid-auto-flow: column; /* Set to 'column' to force cells in a single row */
+      padding-top: 20%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    img {
+  width: 100%; /* Ensure images take up 100% width of their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+  </style>
+</head>
+<body>
+  <div class="grid">
+      <div class="flight">
+        <img src="./flex/img-1.webp" alt="">
+      </div>
+      <div class="flight">
+        <img src="./flex/img-2.webp" alt="">
+      </div>
+      <div class="flight">
+        <img src="./flex/img-3.webp" alt="">
+      </div>
+      <div class="flight">
+        <img src="./flex/img-1.webp" alt="">
+      </div>
+
+
+
+  </div>
+</body>
+</html>

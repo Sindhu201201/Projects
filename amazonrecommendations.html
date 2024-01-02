@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Amazon Threadmill Recommendations</title>
+  
+  <style>
+    *{
+      margin: 0;padding: 0;
+    }
+    body{
+      padding: 1% 5%;
+      box-sizing: border-box;
+    }
+    .checked {
+      color: rgb(248, 199, 23);
+    }
+    .flx{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2%;
+      /* gap: 1%; */
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    .flxitem{  
+      border: 1px solid gray;
+      border-radius: 5%;
+      padding: 1% 2%;
+      box-sizing: border-box;
+      width: calc(16.66% - 20px); /* 6 items in a row, 100% / 6 = 16.66% */
+      margin: 10px;
+      height: 350px;
+    }
+    .flxitem img{
+      width: 100%; /* Ensure the image takes the full width of its container */
+      height: auto; /* Maintain the aspect ratio of the image */
+      display: block; 
+
+    }
+    .price{
+      float:left; 
+    }
+    .price .pri{
+      font-weight: bold;
+    }
+    .top{
+      background-color: blue;
+      
+    }
+    .rate{
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+    .prime{
+      font-weight: bolder;
+      margin-bottom: 2%;
+    }
+    .prime span{
+      color: rgb(17, 176, 239);
+    }
+    button{
+      padding: 8% 8%;
+      border: none;
+      margin-top: 2%;
+    }
+    .similar{
+       border-radius: 20px;
+    }
+    .icon{
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Get Instant Recommendations</h1>
+    <div class="flx">
+
+      <div class="flxitem">
+        <img src="./amazon_recommendations/img1.jpg" alt="">
+        <br>
+        <div class="price"><span class="price">&#8377;<span class="pri">17,499</span><span class="zero">00</span></span></div>
+        <br>
+        <div class="rate"><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span>1434</span><br></div>
+        <div class="prime"><i class="fa-solid fa-check" style="color: #f9d10b;"></i>
+          <span>prime</span> <br></div>
+        <div class="btns"><button class="similar">See Similar</button>
+          <button class="icon"><i class="fa fa-thumbs-down " style="color: #0f0f0f;"></i></button></div>
+      </div>
+
+    
+
+      <div class="flxitem">
+        <img src="./amazon_recommendations/img2.jpg" alt="">
+        <br>
+        <div class="price"><span class="price">&#8377;<span class="pri">17,499</span><span class="zero">00</span></span></div>
+        <br>
+        <div class="rate"><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span>1434</span><br></div>
+        <div class="prime"><i class="fa-solid fa-check" style="color: #f9d10b;"></i>
+          <span>prime</span> <br></div>
+        <div class="btns"><button class="similar">See Similar</button>
+          <button class="icon"><i class="fa fa-thumbs-down " style="color: #0f0f0f;"></i></button></div>
+      </div>
+
+
+
+      <div class="flxitem">
+        <img src="./amazon_recommendations/img3.jpg" alt="">
+        <br>
+        <div class="price"><span class="price">&#8377;<span class="pri">17,499</span><span class="zero">00</span></span></div>
+        <br>
+        <div class="rate"><span class="fa fa-star checked"></span>
+          <span class="fa fa-star "></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star "></span>
+          <span class="fa fa-star"></span>
+          <span>1434</span><br></div>
+        <div class="prime"><i class="fa-solid fa-check" style="color: #f9d10b;"></i>
+          <span>prime</span> <br></div>
+        <div class="btns"><button class="similar">See Similar</button>
+          <button class="icon"><i class="fa fa-thumbs-down " style="color: #0f0f0f;"></i></button></div>
+      </div>
+
+
+
+
+      <div class="flxitem">
+        <img src="./amazon_recommendations/img4.jpg" alt="">
+        <br>
+        <div class="price"><span class="price">&#8377;<span class="pri">17,499</span><span class="zero">00</span></span></div>
+        <br>
+        <div class="rate"><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span>1434</span><br></div>
+        <div class="prime"><i class="fa-solid fa-check" style="color: #f9d10b;"></i>
+          <span>prime</span> <br></div>
+        <div class="btns"><button class="similar">See Similar</button>
+          <button class="icon"><i class="fa fa-thumbs-down " style="color: #0f0f0f;"></i></button></div>
+      </div>
+
+
+
+
+      <div class="flxitem">
+        <img src="./amazon_recommendations/img5.jpg" alt="">
+        <br>
+        <div class="price"><span class="price">&#8377;<span class="pri">17,499</span><span class="zero">00</span></span></div>
+        <br>
+        <div class="rate"><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span>1434</span><br></div>
+        <div class="prime"><i class="fa-solid fa-check" style="color: #f9d10b;"></i>
+          <span>prime</span> <br></div>
+        <div class="btns"><button class="similar">See Similar</button>
+          <button class="icon"><i class="fa fa-thumbs-down " style="color: #0f0f0f;"></i></button></div>
+      </div>
+
+
+
+
+      <div class="flxitem">
+        <img src="./amazon_recommendations/img6.jpg" alt="" >
+        <br>
+        <div class="price"><span class="price">&#8377;<span class="pri">17,499</span><span class="zero">00</span></span></div>
+        <br>
+        <div class="rate"><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span>1434</span><br></div>
+        <div class="prime"><i class="fa-solid fa-check" style="color: #f9d10b;"></i>
+          <span>prime</span> <br></div>
+        <div class="btns"><button class="similar">See Similar</button>
+          <button class="icon"><i class="fa fa-thumbs-down " style="color: #0f0f0f;"></i></button></div>
+      </div>
+
+
+
+
+
+      <div class="flxitem">
+        <img src="./amazon_recommendations/img7.jpg" alt="" style="height: 180px; width: 140px;">
+        <br>
+        <div class="price"><span class="price">&#8377;<span class="pri">17,499</span><span class="zero">00</span></span></div>
+        <br>
+        <div class="rate"><span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star "></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span>1434</span><br></div>
+        <div class="prime"><i class="fa-solid fa-check" style="color: #f9d10b;"></i>
+          <span>prime</span> <br></div>
+        <div class="btns"><button class="similar">See Similar</button>
+          <button class="icon"><i class="fa fa-thumbs-down " style="color: #0f0f0f;"></i></button></div>
+      </div>
+
+
+
+
+
+      <div class="flxitem">
+        <img src="./amazon_recommendations/img8.jpg" alt="" style="height: 180px; width: 140px;">
+        <br>
+        <div class="price"><span class="price">&#8377;<span class="pri">17,499</span><span class="zero">00</span></span></div>
+        <br>
+        <div class="rate"><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span>1434</span><br></div>
+        <div class="prime"><i class="fa-solid fa-check" style="color: #f9d10b;"></i>
+          <span>prime</span> <br></div>
+        <div class="btns"><button class="similar">See Similar</button>
+          <button class="icon"><i class="fa fa-thumbs-down " style="color: #0f0f0f;"></i></button></div>
+      </div>
+
+
+
+
+      <div class="flxitem">
+        <img src="./amazon_recommendations/img9.jpg" alt="" style="height: 180px; width: 140px;">
+        <br>
+        <div class="price"><span class="price">&#8377;<span class="pri">17,499</span><span class="zero">00</span></span></div>
+        <br>
+        <div class="rate"><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star "></span>
+          <span class="fa fa-star"></span>
+          <span>1434</span><br></div>
+        <div class="prime"><i class="fa-solid fa-check" style="color: #f9d10b;"></i>
+          <span>prime</span> <br></div>
+        <div class="btns"><button class="similar">See Similar</button>
+          <button class="icon"><i class="fa fa-thumbs-down " style="color: #0f0f0f;"></i></button></div>
+      </div>
+
+
+
+      <div class="flxitem">
+        <img src="./amazon_recommendations/img10.jpg" alt="" style="height: 180px; width: 140px;">
+        <br>
+        <div class="price"><span class="price">&#8377;<span class="pri">17,499</span><span class="zero">00</span></span></div>
+        <br>
+        <div class="rate"><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span>1434</span><br></div>
+        <div class="prime"><i class="fa-solid fa-check" style="color: #f9d10b;"></i>
+          <span>prime</span> <br></div>
+        <div class="btns"><button class="similar">See Similar</button>
+          <button class="icon"><i class="fa fa-thumbs-down " style="color: #0f0f0f;"></i></button></div>
+      </div>
+   
+
+
+
+  <div class="flxitem">
+    <img src="./amazon_recommendations/img11.jpg" alt="" style="height: 180px; width: 140px;">
+    <br>
+    <div class="price"><span class="price">&#8377;<span class="pri">17,499</span><span class="zero">00</span></span></div>
+    <br>
+    <div class="rate"><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span>1434</span><br></div>
+    <div class="prime"><i class="fa-solid fa-check" style="color: #f9d10b;"></i>
+      <span>prime</span> <br></div>
+    <div class="btns"><button class="similar">See Similar</button>
+      <button class="icon"><i class="fa fa-thumbs-down " style="color: #0f0f0f;"></i></button></div>
+  </div>
+
+
+
+  <div class="flxitem">
+    <img src="./amazon_recommendations/img12.jpg" alt="" style="height: 180px; width: 140px;">
+    <br>
+    <div class="price"><span class="price">&#8377;<span class="pri">17,499</span><span class="zero">00</span></span></div>
+    <br>
+    <div class="rate"><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span>1434</span><br></div>
+    <div class="prime"><i class="fa-solid fa-check" style="color: #f9d10b;"></i>
+      <span>prime</span> <br></div>
+    <div class="btns"><button class="similar">See Similar</button>
+      <button class="icon"><i class="fa fa-thumbs-down " style="color: #0f0f0f;"></i></button></div>
+  </div>
+
+
+  
+</div>
+  </div>
+</body>
+</html>
