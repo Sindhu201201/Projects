@@ -9,8 +9,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Varela+Round&family=Whisper&display=swap");
 
-body{
+head,body{
   background-color: antiquewhite;
+  overflow-x: hidden;
 }
 
 * {
@@ -123,9 +124,10 @@ nav ul li {
 }
 
 .songinfo{
-  position: absolute;
-  left: 10vw;
+  /* position: absolute;
+  left: 10vw; */
   font-family: "Ubuntu", sans-serif;
+  margin-left: 10vw;
 }
 .songinfo img{
   opacity: 0;
@@ -137,6 +139,15 @@ nav ul li {
     background-color: whitesmoke;
   }
 }
+@media (max-width:450px)
+    {
+      .songItem .songname{
+        font-size: 3px;
+      }
+      .songItem{
+        margin: 8px 0;
+      }
+    }
 
   </style>
 </head>
@@ -170,7 +181,7 @@ nav ul li {
         </div>
         <div class="songItem">
           <img src="coverpics\cover2.jpeg" alt="1" >
-          <span class="songName">Atu itu ooguthu</span>
+          <span class="songName">Atu itu</span>
           <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
         </div>
         <div class="songItem">
@@ -200,12 +211,12 @@ nav ul li {
         </div>
         <div class="songItem">
           <img src="coverpics\cover8.jpeg" alt="1" >
-          <span class="songName">Shanthi Om Shanthi</span>
+          <span class="songName">Om Shanthi</span>
           <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
         </div>
         <div class="songItem">
           <img src="coverpics\cover9.jpeg" alt="1" >
-          <span class="songName">Gusa Gusa Lade</span>
+          <span class="songName">Gusa Gusa</span>
           <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
         </div>
       </div>
