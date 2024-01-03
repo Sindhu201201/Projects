@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>myTunes</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      color: white;
+      font-family: sans-serif;
+    }
+    body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(35, 35, 154);
+      padding: 30px 5%;
+      box-sizing: border-box;
+      box-shadow: 5px 5px 5px black;
+      position:sticky;
+      z-index: 100;
+      top:0;
+    }
+    .header .tit{
+      font-size: 28px;
+      font-weight: bolder;
+    }
+    .optn {
+      display: flex;
+      margin-right: 50px;
+      align-items: center;
+    }
+    .optn h6{
+      margin-right: 30px;
+      font-size: 15px;
+      font-weight: 2px;
+    }
+    .hero{
+      background-image: url(./pro6/hero_image.png);
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+      padding: 0px 200px;
+    }
+    .hero h1{
+      font-size: 100px;
+      margin-bottom: 30px;
+    }
+    .hero h2{
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .hero p{
+      text-align: center;
+      font-size: 18px;
+    }
+    .mid{
+      background-color: rgb(60, 10, 121);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+      padding: 150px;
+    }
+    .mid h1{
+        margin-bottom: 20px;
+    }
+    .mid h4{
+      margin-bottom: 20px;
+      line-height: 23px;
+    } 
+    .mid button{
+      background-color: red;
+      border: none;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .img{
+      z-index: 200;
+      align-self: center;
+    }
+    .third{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .third h3{
+      color: black;
+      margin-top: 8%;
+
+      text-align: center;
+    }
+    .third p{
+      color: black;
+      text-align: center;
+      margin: 3% 15%;
+      font-weight: lighter;
+      line-height: 140%;
+    }
+    .third button{
+      background-color:rgb(81, 0, 157);
+      color: white;
+      border: none;
+      padding: 0.7% 1.5%;
+      margin-bottom: 4%;
+      /* margin-left: 45%; */
+      width: 10%;
+      
+    }
+    .four{
+      background-image: url(./pro6/video.png);
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* margin-bottom: 4%; */
+    }
+    .four h4{
+      text-align: center;
+    }
+    .four p{
+      margin: 2% 15%;
+      text-align:center;
+      line-height: 120%;
+    }
+    .five{
+      display: flex;
+      padding: 8% 12%;
+      align-items: center;
+      justify-content: center;
+    }
+    .five .col{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .five .col h4,.five .col p,.five .col hr{
+      color: black;
+      margin: 1.2% 5%;
+    }
+    .five button{
+      margin: 1.2% 5%;
+      background-color:rgb(81, 0, 157);
+      color: white;
+      border: none;
+      padding: 2% 5%;
+      width: auto;
+    }
+    .footer{
+      display: flex;
+      background-color: rgb(30, 2, 99);
+      align-items: center;
+      justify-content: center;
+    }
+    .footer .col{
+      margin: 2% 8%;
+      /* display: flex;
+      flex-direction: column;
+      align-items: center; */
+    }
+    .footer .col li{
+      list-style-type: none;
+    }
+    .footer .col h3{
+      border-bottom: 1px solid white;
+      margin-bottom: 8%;
+      padding-bottom: 8%;
+    }
+    .lfooter{
+      text-align: center;
+      background-color: rgb(82, 4, 166);
+      padding: 1.2%;
+    }
+    @media(max-width:1130px){
+      .footer .col{
+      margin: 2% 6%;}
+      .footer .col h3,.footer .col li{font-size: small;}
+      .five .col p{
+        font-size: small;
+      }
+    }
+
+    @media(max-width:864px){
+      .hero {
+        padding: 0px 150px;
+      }
+      .footer .col{
+      margin: 2% 5%;}
+      .footer .col h3,.footer .col li{font-size: small;}
+      .five .col p{
+        font-size: small;
+      }
+      .hero h1{
+        font-size: 70px;
+      }
+      .hero h2{
+        font-size: 20px;
+        text-align: center;
+      }
+      .hero p{
+        font-size: 15px;
+      }
+      .third button{
+        width: 100px;
+      }
+      .mid h4{
+        font-size: 15px;
+      }
+      .mid button{
+        width: 140px;
+      }
+      .five img{
+         width: 180px;
+      }
+      .third img{
+       width: 500px;
+      }
+    }
+
+    @media(max-width:864px){
+      .hero p{
+        font-size: 13px;
+      }
+      .hero h1{
+        font-size: 50px;
+      }
+      .hero h2{
+        font-size: 16px;
+      }
+      .hero {
+        padding: 0px 130px;
+      }
+    }
+
+    @media(max-width:535px){
+      .optn h6{
+           font-size: small;
+           margin-right: 10px;
+      }
+      .optn{
+        margin-right:0;
+      }
+      .hero h1{
+        font-size: 25px;
+      }
+      .hero h2,  .mid h4, .mid p, .third h3, .third p, .fourh4, .four p, .five .col p, .lfooter p{
+        font-size: 12px;
+      }
+      .hero p, .footer .col h3, .footer .col li{
+        font-size: 8px;
+      }
+      .mid h1{
+        font-size:25px ;
+      }
+      .mid button, .third button, .five button{
+        width: 100px;
+        font-size: 8px;
+      }
+      .third img{
+       width: 350px;
+       padding-top: 1.2%;
+       padding-bottom: 1.2%;
+      }
+      .hero{
+        padding: 0px 100px;
+      }
+      .mid{
+        padding: 100px;
+      }
+      .four{
+        padding: 100px;
+      }
+    
+    }
+    @media(max-width:400px){
+      .tit{
+        font-size: 5px;
+      }
+      .header{
+        padding: 20px 3%;
+      }
+      .header h6{
+        font-size: 8px;
+      }
+      .five{
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+      }
+      .four, .mid{
+        padding: 70px;
+      }
+    }
+   
+
+  </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="tit"><h5>myTunes</h5></div>
+      <div class="optn">
+        <h6>Overview</h6>
+        <h6>Music</h6>
+        <h6>Video</h6>
+        <h6>Gift Cards</h6>
+      </div>
+    </div>
+
+    <div class="hero">
+      <h1>my Tunes</h1>
+      <h2>Your music, movies, and TV shows take center stage.
+      </h2>
+      <p>myTunes is the best way to organize and enjoy the music, movies, and TV
+        shows you already have — and shop for the ones you want. Enjoy all the
+        entertainment myTunes has to offer on your Mac and PC.</p>
+    </div>
+
+    <div class="mid">
+      <h1><i class="fa fa-music" style="font-size:30px"></i> Music</h1>
+
+      <h4>Stream over 45 million songs, ad-free. Or download albums and tracks
+        to listen to offline. All the music in your personal myTunes library —
+        no matter where it came from — lives right alongside the Orange Music
+        catalog. Start your free three-month trial with no commitment, and
+        cancel anytime.
+      </h4>
+
+      <button>Start Your Trial Now</button>
+      <p>Orange Music is available in myTunes, and for iOS and Android
+        devices.</p> </div>
+    <!-- <div class="img">
+    
+    <img src="./pro6/ipad-iphone.png" alt="">
+    </div>
+  </div> -->
+    <div class="third">
+      <h3>The movie and TV collection you always wished for. Granted.</h3>
+      <p>With over 100,000 movies and TV shows to choose from, there’s always
+        something great to watch on myTunes and if you watch on Orange TV 4K,
+        you’ll be able to enjoy a tremendous selection of your favorite content
+        in 4K HDR. So get ready to enjoy episodes of your favorite TV shows or
+        hit movies you’ve been waiting to see — anytime, anywhere. Just tap to
+        play, or even download if you’re going somewhere you won’t have
+        Wi-Fi.</p>
+      <button>Read more</button>
+      <img src="./pro6/mac.png" alt style="margin-bottom: 3%;">
+    </div>
+
+    <div class="four">
+      <h4>A world of entertainment. Available wherever you are.</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
+        doloremque! In, illum! Eius eos, fuga delectus cupiditate inventore
+        minima consequatur hic minus modi laudantium fugiat. Quasi reiciendis
+        harum voluptatum accusamus.</p>
+    </div>
+
+    <div class="five">
+      <img src="./pro6/gift_card.png" alt>
+      <div class="col">
+        <h4>Gift Card</h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+          cum explicabo, excepturi eaque commodi minima quas repellendus
+          assumenda facere hic, earum quasi iste asperiores molestiae obcaecati
+          laborum, voluptatum alias velit cupiditate! Quae soluta sapiente
+          quasi, iusto quam magnam doloribus natus quod eius, rerum asperiores
+          aspernatur. Illum neque sequi odit fuga.
+        </p> <br> <p>
+          Already have an Orange MyTunes Music Gift Card?</p>
+        <hr>
+        <button>Reedem</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="col">
+      <h3>Shop & Learn</h3>
+      <ul>
+        <li>Music</li>
+        <li>
+          Movies</li>
+        <li>
+          Shows</li>
+        <li>
+          Apps</li>
+        <li>
+          Gift Cards</li>
+      </ul></div>
+
+      <div class="col">
+      <h3>Orange Store
+      </h3>
+      <ul>
+        <li>Find a Store</li>
+        <li>
+          Movies</li>
+        <li>
+          Shows</li>
+        <li>
+          Apps</li>
+        <li>
+          Gift Cards</li>
+      </ul></div>
+
+      <div class="col">
+      <h3>Education & Business</h3>
+      <ul>
+        <li>Orange & Education</li>
+        <li>Shop for Collage</li>
+        <li>Orange & Business</li>
+        <li>Shop for Business</li>
+        <li>
+          Gift Cards</li>
+      </ul></div>
+
+      <div class="col">
+      <h3>About Orange</h3>
+      <ul>
+        <li>Newsroom</li>
+        <li>Orange Leadership</li>
+        <li>Investors</li>
+        <li>
+          Apps</li>
+        <li>
+          Gift Cards</li>
+      </ul>
+    </div></div>
+
+    <div class="lfooter">
+      <p>Copyright © 2022 Do Some Coding</p>
+    </div>
+  </body>
+</html>
