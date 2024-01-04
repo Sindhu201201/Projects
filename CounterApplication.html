@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter Application</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background:linear-gradient(to bottom, black,rgb(38, 168, 255));
+      height: 92vh;
+      padding: 5% 30%;
+    }
+    .container h1{
+      margin: 10% 0%;
+      text-align: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .app{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      padding: 3% 0%;
+    }
+    .container .app .counter-preview, .app h3, .app p{
+      color: black;
+    }
+    .container .app .counter-preview{
+      margin: 6% 0%;
+    }
+    
+    .app h3{
+      margin-left: 80%;
+      margin-top: 2%;
+    }
+    .app .btn{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .app .btn button
+    {
+      margin: 2% 3%;
+      padding: 1.5% 5%;
+      font-size: 95%;
+      color: white;
+      background-color: rgb(24, 51, 71);
+      border: none;
+      border-radius: 5%;
+      cursor: pointer;
+    }
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Counter Application</h1>
+    <div class="app">
+        <h3 class="evenorodd"></h3>
+        <h1 class="counter-preview">0</h1>
+        <p class="method"></p>
+        <div class="btn">
+          <button id="decrement" onclick="decrement()">-</button>
+          <button id="reset"  onclick="resetting()">reset</button>
+          <button id="increment"  onclick="increment()">+</button>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    const decrementButton = document.getElementById('decrement');
+    const incrementButton = document.getElementById('increment');
+    // const incrementBtn = document.querySelector("#increment")
+    const reset = document.getElementById('reset');
+    const display = document.querySelector('.counter-preview');
+    const name=document.querySelector('.method');
+    const evenodd=document.querySelector('.evenorodd');
+
+    let count=0;
+
+    function increment(){
+      if(count<25){
+      count+=1;
+      display.textContent=count;
+      name.textContent="Incremented";
+      evenoddcheck();}
+      else{
+        alert("Sorry! we are accepting values between 0 to 25 only");
+      }
+    }
+    
+
+    function decrement(){
+    if(count>0)
+    {
+      count-=1;
+      display.textContent=count;
+      name.textContent="decremented";
+      evenoddcheck();
+    } 
+    else{
+      alert("Sorry! we are not accept negative numbers");
+    }}
+    
+
+    function resetting(){
+      count=0;
+      display.textContent=count;
+      name.textContent="reset done";
+      evenodd.textContent="";
+    }
+    
+
+    function evenoddcheck(){
+      if(count%2===0){
+      evenodd.textContent="even";
+    }else{
+      evenodd.textContent="odd";
+    }
+    }
+    
+  </script>
+</body>
+</html>
